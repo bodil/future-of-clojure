@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>The Future of Clojure</title>
+    <meta name="author" content="Bodil Stokke">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/fonts/KnightsTemplar/font.css">
+    <style type="text/css">
+body { visibility: hidden; background: black; }
+    </style>
+  </head>
+  <body>
+
+    <div id="slides" data-background="m/bruce-dim.jpg">
+
+      <section class="nobg title" data-background="m/bruce.jpg">
+        <h2><span class="small">The</span> Future <span class="small">of</span></h2>
+        <h1>Clo<i style="letter-spacing: 0.12em">j</i>ure</h1>
+        <p>@bodil</p>
+      </section>
+
+      <section>
+        <h3>DISCLAIMER</h3>
+        <p>
+          Nothing in this talk should be taken to suggest, promise or
+          offer a binding contract to the effect that the BODOL
+          programming language will ever be production ready, finished
+          or at all logically sound.
+        </p>
+      </section>
+
+      <section class="photo meme" data-image="m/cat-interview.jpg">
+        <p class="top fragment">Why don't you have a seat</p>
+        <p class="bottom small fragment">and tell me how these pictures of me<br>found their way onto the internets</p>
+      </section>
+
+      <!-- <section class="photo" data-image="m/nph.gif"></section> -->
+      <section class="photo meme" data-image="m/squirrel.jpg">
+        <p class="bottom">WHY?</p>
+      </section>
+
+      <section class="photo" data-image="m/thoughtworks.png"></section>
+
+      <section class="photo" data-image="m/thought-leader.png"></section>
+
+      <section style="background-color: white">
+        <img src="m/corporate/braintree.png">
+        <img src="m/corporate/drw.jpg">
+        <img src="m/corporate/deutsche-bank.png">
+      </section>
+      <section class="photo" data-image="m/corporate/walmart.jpg"></section>
+      <section class="photo" data-image="m/corporate/monsanto.jpg"></section>
+      <section class="photo" data-image="m/corporate/mail.jpg"></section>
+      <section class="photo" data-image="m/uncle-bob.jpg"></section>
+
+      <section class="photo white" data-image="m/hipster-pinkie.jpg">
+        <h1>Clo<i style="letter-spacing: 0.07em">j</i>ure</h1>
+        <p>is now a mainstream programming language.</p>
+      </section>
+
+      <section class="photo meme" data-background="m/founding-fathers.jpg">
+        <p class="top">
+          NOVUS ORDO SECLO<i style="letter-spacing: 0.13em">J</i>URUM
+        </p>
+      </section>
+
+      <section class="photo" data-image="m/young-rich.jpg"></section>
+      <section class="photo" data-image="m/young-rich-and-tom.jpg"></section>
+      <section class="photo meme" data-image="m/young-rich-flipped.jpg">
+        <p class="bottom small" style="padding-bottom: 0.5em">
+          i should design a lisp
+        </p>
+      </section>
+
+      <section>
+        <h4>Quick, to the parentheses!</h4>
+        <ul>
+          <li class="fragment">A language designed for concurrency.</li>
+          <li class="fragment">Persistent data structures at its heart.</li>
+          <li class="fragment">State as immutable values over time.</li>
+          <li class="fragment">Few, clearly defined concurrency primitives.</li>
+        </ul>
+      </section>
+
+      <section class="photo meme" data-image="m/joe-slouch.jpg">
+        <p class="bottom">cool story bro</p>
+      </section>
+
+      <section>
+        <h4>Why, indeed, not Erlang?</h4>
+      </section>
+
+      <section class="photo" data-image="m/hobbit.gif"></section>
+      <section class="photo" data-image="m/actor.jpg"></section>
+      <section class="photo" data-image="m/enterprise.jpg"></section>
+      <section class="photo meme" data-image="m/force-choke.png">
+        <p class="top small">I find your lack of faith</p>
+        <p class="bottom">disturbing</p>
+      </section>
+
+      <section>
+        <h4>The Java Virtual Machine</h4>
+        <ul>
+          <li class="fragment">A very well established library ecosystem.</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </section>
+      <section class="photo" data-image="m/spring.jpg"></section>
+      <section>
+        <h4>The Java Virtual Machine</h4>
+        <ul>
+          <li>A very well established library ecosystem.</li>
+          <li class="fragment">An enormous pre-existing user base.</li>
+          <li class="fragment">Interop with legacy enterprise systems.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>That Other Platform</h4>
+        <ul>
+          <li class="fragment">Clojure everywhere means Clojure in the browser.</li>
+          <li class="fragment">Rich hacked together a Clj-to-JS compiler one late night.</li>
+          <li class="fragment">Business plan:<br>get someone excited → wait → production ready!</li>
+        </ul>
+      </section>
+
+      <section class="photo" data-image="m/young-david.jpg"></section>
+
+      <section>
+        <h4>ClojureScript</h4>
+        <ul>
+          <li class="fragment">Set the standard for efficient persistent data structures in JS.</li>
+          <li class="fragment">Paired up with React, even JS devs started thinking this might be a good idea.</li>
+        </ul>
+      </section>
+
+      <section class="photo meme" data-image="m/rich-facepalm.jpg">
+        <p class="bottom">still not self hosting</p>
+      </section>
+
+      <section class="photo meme" data-image="m/robin.jpg">
+        <p class="bottom">TYPES</p>
+      </section>
+
+      <section class="photo meme" data-image="m/ambrose-will-dan.jpg">
+        <p class="top">LISPY TYPES</p>
+      </section>
+
+      <section>
+        <h4>Typed Clojure</h4>
+        <ul>
+          <li class="fragment">Racket got a type system.</li>
+          <li class="fragment">So Clojure got a type system.</li>
+        </ul>
+      </section>
+
+      <section class="photo meme" data-image="m/power-aphyr.jpg">
+        <p class="bottom">TYPES</p>
+      </section>
+
+      <section>
+        <h4>core.typed</h4>
+        <ul>
+          <li class="fragment">Lispy type signatures can get crazy.</li>
+          <li class="fragment">Optional types means lack of syntax support.</li>
+          <li class="fragment">But there are types!</li>
+        </ul>
+      </section>
+
+      <section class="photo meme" data-image="m/joe-question.jpg">
+        <p class="top">i have a question</p>
+        <p class="bottom">what was that about concurrency?</p>
+      </section>
+
+      <section>
+        <h4>Clojure's Concurrency Story</h4>
+        <ul>
+          <li class="fragment">STM, futures, agents left us wanting.</li>
+          <li class="fragment">No facility for communication between processes,
+            <br>or between network nodes.</li>
+        </ul>
+      </section>
+
+      <section class="photo meme" data-image="m/joe-smiling.jpg">
+        <p class="top">you don't say</p>
+        <p class="bottom">did you forget your messaging protocols lol</p>
+      </section>
+
+      <section>
+        <h2>LAMINA</h2>
+        <p>by Dr. Zachary Tellman</p>
+      </section>
+
+      <!-- <section class="photo" data-image="m/bigfoot.jpg"></section> -->
+
+      <section class="photo meme" data-image="m/tellman-dijkstra-hoare.png">
+        <p class="bottom small">Communicating Sequential Processes (1978)</p>
+      </section>
+
+      <section class="photo meme" data-image="m/the-erik-meijer.png">
+        <p class="bottom small">Reactive Extensions</p>
+      </section>
+
+      <section class="photo meme" data-image="m/young-rich.jpg">
+        <p class="bottom small" style="padding-bottom: 0.5em">
+          i should implement CSP
+        </p>
+      </section>
+
+      <section>
+        <h4>core.async</h4>
+        <ul>
+          <li class="fragment">Decomplected channel implementation.</li>
+          <li class="fragment">Go blocks simulate lightweight processes.</li>
+        </ul>
+      </section>
+
+      <section class="photo meme" data-image="m/come-at-me-joe.jpg">
+        <p class="bottom">come at me bro</p>
+      </section>
+
+      <section>
+        <h3>Computer Science</h3>
+        <h4>and beyond</h4>
+      </section>
+
+      <section class="photo meme" data-image="m/the-felleisenes.jpg">
+        <p class="bottom smaller">Hickey among the Felleisenes</p>
+      </section>
+
+      <section class="photo meme" data-image="m/great-quux.jpg">
+        <p class="top small">So you're folding over that data structure?</p>
+        <p class="bottom small">I guess you only ever have one CPU core.</p>
+      </section>
+
+      <section class="photo" data-image="m/transducers.jpg"></section>
+
+      <section class="photo" data-image="m/a-transducer-is-just.png"></section>
+
+      <section class="align-left">
+        <h3>fu·ture</h3>
+        <p>from the Latin <i>futurus</i> via Old French</p>
+        <ul>
+          <li>time regarded as still to come</li>
+          <li>(finance) short for futures contract</li>
+          <li>(haskell) muggle slang for ContT</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>You're the best community ever.</h4>
+        <p class="fragment">But you can be a bit homogeneous.</p>
+      </section>
+
+      <section class="photo" data-image="m/women-in-clojure.jpg"></section>
+
+      <section class="photo" data-image="m/clojurebridge.png"></section>
+
+      <section class="photo" data-image="m/gandalf.jpg"></section>
+
+      <section class="photo" data-image="m/clojurebridge.png"></section>
+
+      <section class="photo" data-image="m/spiewak.jpg"></section>
+
+      <section class="photo" data-image="m/dhh-sees-all.jpg"></section>
+
+      <section>
+        <h4>Clojure is important!</h4>
+        <ul>
+          <li class="fragment">It embodies so many crucial FP ideas.</li>
+          <li class="fragment">It's an amazing way to teach FP.</li>
+          <li class="fragment">It should be everywhere!</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>Macros</h4>
+        <ul>
+          <li class="fragment">I want syntax macros.</li>
+          <li class="fragment">core.typed needs syntax macros.</li>
+          <li class="fragment">Can we make them composable?</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>core.typed</h4>
+        <ul>
+          <li class="fragment">Annotate by default!</li>
+          <li class="fragment">Optional types lead to TypeScript hell.</li>
+          <li class="fragment">Typed dispatch for better monads!</li>
+        </ul>
+      </section>
+
+      <section class="photo meme" data-image="m/matthias.jpg">
+        <p class="top">first, we take Scheme</p>
+        <p class="bottom">then we take the world</p>
+      </section>
+
+      <section>
+        <p>Please keep learning new languages.</p>
+        <p class="fragment">Take what you learn and make Clojure better.</p>
+        <p class="fragment">There is no such thing as the best language.</p>
+      </section>
+
+      <section class="photo meme" data-image="m/mad-science.jpg">
+        <p class="bottom">Erlang is made by professionals</p>
+      </section>
+
+      <section class="nobg" data-background="m/bruce.jpg"></section>
+
+      <section class="nobg title">
+        <h1>OK THANK YOU!</h1>
+        <p>now go to the pub</p>
+        <p>@bodil</p>
+      </section>
+
+    </div>
+    <script type="text/javascript" src="dist/pink/pink.js"></script>
+  </body>
+</html>
